@@ -22,6 +22,7 @@ function grabAll(count, after){
 			var cell1 = row.insertCell(0);
 			var cell2 = row.insertCell(1);
 			var cell3 = row.insertCell(2);
+			var cell4 = row.insertCell(3);
 
 			var link = document.createElement('a')
 			document.getElementById("myTableBody").childNodes[i+1+(count-25)].childNodes[0].appendChild(link);
@@ -42,6 +43,7 @@ function grabAll(count, after){
 				}
 			}
 			cell3.innerHTML = result.data.children[i].data.subreddit;
+			cell4.innerHTML = result.data.children[i].data.author;
 
 		}
 
