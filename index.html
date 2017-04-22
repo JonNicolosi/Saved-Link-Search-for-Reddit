@@ -19,15 +19,20 @@
 				<input type="email" class="form-control" id="username">
 			</div>
 			<button id="myBtn">Submit</button>
-	  <h2>Saved Links</h2>
+	  <h2 id = "tableTitle">Saved Links
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+		</h2>
+
 	  <table class="table table-striped" id="myTable">
 	    <thead>
 	      <tr>
 	        <th>Sort</th>
+					<th>Title</th>
+					<th>Subreddit</th>
+					<th>Author</th>
 	      </tr>
 	    </thead>
 	    <tbody id="myTableBody">
-
 	    </tbody>
 	  </table>
 	</div>
