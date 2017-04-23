@@ -1,6 +1,13 @@
 #myInput{
-
   position: absolute;
-  right: 0px;
+  margin: auto;
+  width: 30%;
+  left: 300px;
+}
 
+#narrow{
+  position: absolute;
+  margin: auto;
+  width: 30%;
+  left: 750px;
 }
