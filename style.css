@@ -2,12 +2,33 @@
   position: absolute;
   margin: auto;
   width: 30%;
-  left: 300px;
+  left: 250px;
 }
 
-#narrow{
+#bytitlecommentbody{
+
+position: absolute;
+margin: auto;
+left: 680px;
+
+}
+
+#bysubreddit{
   position: absolute;
   margin: auto;
-  width: 30%;
-  left: 750px;
+  left: 1100px;
+
+
+}
+
+.container{
+
+width: 85%;
+
+}
+
+#username{
+
+width: 25%;
+
 }
