@@ -32,6 +32,10 @@ function grabAll(count, after){
 				img.src= result.data.children[i].data.thumbnail;
 				document.getElementById("myTableBody").childNodes[i+1+(count-25)].childNodes[0].childNodes[0].appendChild(img);
 			}
+			else{
+				img.src = "nothumb.png";
+				document.getElementById("myTableBody").childNodes[i+1+(count-25)].childNodes[0].childNodes[0].appendChild(img);
+			}
 			if(result.data.children[i].kind == "t3"){
 				cell2.innerHTML = result.data.children[i].data.title;
 			}
