@@ -28,9 +28,10 @@ function grabAll(count, after){
 			document.getElementById("myTableBody").childNodes[i+1+(count-25)].childNodes[0].appendChild(link);
 			document.getElementById("myTableBody").childNodes[i+1+(count-25)].childNodes[0].childNodes[0].setAttribute("href", URL);
 			var img = document.createElement('img');
-			img.src= result.data.children[i].data.thumbnail;
-			document.getElementById("myTableBody").childNodes[i+1+(count-25)].childNodes[0].childNodes[0].appendChild(img);
-
+			if(result.data.children[i].data.hasOwnProperty('thumbnail') && result.data.children[i].data.thumbnail != "self" && result.data.children[i].data.thumbnail != "default" && result.data.children[i].data.thumbnail != "nsfw" ){
+				img.src= result.data.children[i].data.thumbnail;
+				document.getElementById("myTableBody").childNodes[i+1+(count-25)].childNodes[0].childNodes[0].appendChild(img);
+			}
 			if(result.data.children[i].kind == "t3"){
 				cell2.innerHTML = result.data.children[i].data.title;
 			}
@@ -48,9 +49,9 @@ function grabAll(count, after){
 		}
 
 
-		// if(result.data.after!=null){
-		// 	grabAll(count+=25,result.data.after);
-		// }
+		if(result.data.after!=null){
+			grabAll(count+=25,result.data.after);
+		}
 	}});
 }
 
