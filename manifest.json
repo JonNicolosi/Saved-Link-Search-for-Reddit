@@ -1,7 +1,7 @@
 {
 "manifest_version":2,
 
-"name": "SearchSavedRedditLinks",
+"name": "Saved Link Search for Reddit",
 "description": "Organize and search links you've saved on Reddit",
 "version": "1.0",
 
