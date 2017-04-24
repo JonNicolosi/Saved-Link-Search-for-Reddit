@@ -2,21 +2,21 @@
   position: absolute;
   margin: auto;
   width: 30%;
-  left: 250px;
+  left: 15%;
 }
 
 #bytitlecommentbody{
 
 position: absolute;
 margin: auto;
-left: 680px;
+left: 48%;
 
 }
 
 #bysubreddit{
   position: absolute;
   margin: auto;
-  left: 1100px;
+  left: 80%;
 
 
 }
